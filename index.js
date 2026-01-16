@@ -33,7 +33,7 @@ async function run() {
     //  All Item Get
     app.get("/items", async (req, res) => {
       const cursor = itemCollection.find();
-      const result = await cursor.toArray();
+      const result = await itemCollection.find().sort({_id: -1}).toArray();
       res.send(result);
     });
 
