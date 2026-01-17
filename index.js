@@ -10,8 +10,6 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-// gadgetVerse
-// CDwXUq874P9jRhW5
 
 // const uri = `mongodb+srv://gadgetVerse:CDwXUq874P9jRhW5@cluster0.5fdvbil.mongodb.net/?appName=Cluster0`
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.5fdvbil.mongodb.net/?appName=Cluster0`;
