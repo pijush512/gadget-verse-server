@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
-require("dotenv").config(); // .env ফাইল ব্যবহারের জন্য
+require("dotenv").config(); 
 
 const app = express();
 const port = 5000;
